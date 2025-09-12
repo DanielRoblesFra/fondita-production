@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("menuSemanaContainer"); // Contenedor de las cards
 
-    fetch("/api/menu")
+    fetch("https://fondita.onrender.com/api/menu")
         .then(res => res.json())
         .then(data => {
         container.innerHTML = "";
