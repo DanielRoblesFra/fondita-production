@@ -1,3 +1,4 @@
+// scoll.js - Scroll suave universal para móvil y PC
 document.addEventListener('DOMContentLoaded', function() {
     // Función de scroll suave mejorada
     function smoothScroll(target) {
