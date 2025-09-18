@@ -6,7 +6,7 @@
     
     // Configuración optimizada para velocidad
     const config = {
-        duration: 150,          // Duración mucho más rápida
+        duration: 100,          // Duración mucho más rápida
         easing: 'easeOutQuart', // Easing rápido pero suave
         offset: 0,              // Offset adicional si necesitas espacio extra
         mobileOffset: 70        // Offset extra para móviles (para navbars fijos)
