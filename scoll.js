@@ -1,52 +1,43 @@
-// scroll-mejorado.js - Scroll suave optimizado para móvil y PC
+// scroll-optimizado.js - Elimina delay y animación lenta del primer clic
 (function() {
     'use strict';
     
-    let isScrolling = false; // Prevenir múltiples scrolls simultáneos
+    let isScrolling = false;
+    let initialized = false;
     
-    // Configuración optimizada para velocidad
+    // Configuración ultra-optimizada
     const config = {
-        duration: 100,          // Duración mucho más rápida
-        easing: 'easeOutQuart', // Easing rápido pero suave
-        offset: 0,              // Offset adicional si necesitas espacio extra
-        mobileOffset: 70        // Offset extra para móviles (para navbars fijos)
+        duration: 300,
+        offset: 0,
+        mobileOffset: 70
     };
     
-    // Detectar si es móvil
+    // Detectar móvil
     function isMobile() {
-        return window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        return window.innerWidth <= 768;
     }
     
-    // Funciones de easing mejoradas
-    const easingFunctions = {
-        easeInOutCubic: function(t) {
-            return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-        },
-        easeOutQuart: function(t) {
-            return 1 - (--t) * t * t * t;
-        },
-        easeInOutQuart: function(t) {
-            return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
-        }
-    };
+    // Easing simple y rápido
+    function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+    }
     
-    // Función principal de scroll suave
+    // Función de scroll optimizada para eliminar delays
     function smoothScroll(target, customDuration = null) {
-        // Prevenir scroll si ya hay uno en progreso
         if (isScrolling) return;
         
         const targetElement = typeof target === 'string' 
             ? document.querySelector(target) 
             : target;
         
-        if (!targetElement) {
-            console.warn('Elemento no encontrado:', target);
-            return;
-        }
+        if (!targetElement) return;
+        
+        // Cancelar cualquier comportamiento de scroll nativo INMEDIATAMENTE
+        document.documentElement.style.scrollBehavior = 'auto';
         
         isScrolling = true;
         
-        // Calcular posiciones
+        // Cálculos inmediatos sin delays
         const startPosition = window.pageYOffset;
         const targetRect = targetElement.getBoundingClientRect();
         const offset = isMobile() ? config.mobileOffset : config.offset;
@@ -54,92 +45,66 @@
         const distance = targetPosition - startPosition;
         const duration = customDuration || config.duration;
         
-        // Si la distancia es muy pequeña, hacer scroll directo
-        if (Math.abs(distance) < 50) {
+        // Para distancias muy pequeñas, scroll instantáneo
+        if (Math.abs(distance) < 20) {
             window.scrollTo(0, targetPosition);
             isScrolling = false;
             return;
         }
         
-        let startTime = null;
-        const easingFunction = easingFunctions[config.easing];
+        const startTime = performance.now();
         
-        // Función de animación optimizada
+        // Animación sin delays ni preparación
         function animate(currentTime) {
-            if (startTime === null) startTime = currentTime;
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easedProgress = easeOutCubic(progress);
             
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / duration, 1);
-            const easedProgress = easingFunction(progress);
-            
-            const currentPosition = startPosition + (distance * easedProgress);
-            window.scrollTo(0, currentPosition);
+            const currentPos = startPosition + (distance * easedProgress);
+            window.scrollTo(0, currentPos);
             
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
-                // Asegurar posición final exacta
                 window.scrollTo(0, targetPosition);
                 isScrolling = false;
-                
-                // Disparar evento personalizado cuando termine
-                targetElement.dispatchEvent(new CustomEvent('scrollComplete'));
             }
         }
         
-        // Cancelar cualquier scroll automático del navegador
-        window.addEventListener('wheel', cancelScroll, { passive: false });
-        window.addEventListener('touchmove', cancelScroll, { passive: false });
-        window.addEventListener('keydown', cancelScrollOnKey);
-        
-        // Iniciar animación
+        // Iniciar inmediatamente
         requestAnimationFrame(animate);
-        
-        // Función para cancelar scroll si el usuario interactúa
-        function cancelScroll(e) {
-            if (isScrolling) {
-                isScrolling = false;
-                cleanupListeners();
-            }
-        }
-        
-        function cancelScrollOnKey(e) {
-            // Cancelar en teclas de navegación
-            if ([32, 33, 34, 35, 36, 37, 38, 39, 40].includes(e.keyCode)) {
-                cancelScroll(e);
-            }
-        }
-        
-        function cleanupListeners() {
-            window.removeEventListener('wheel', cancelScroll);
-            window.removeEventListener('touchmove', cancelScroll);
-            window.removeEventListener('keydown', cancelScrollOnKey);
-        }
-        
-        // Limpiar listeners después de la animación
-        setTimeout(cleanupListeners, duration + 50);
     }
     
-    // Inicialización cuando el DOM esté listo
-    function init() {
-        // Aplicar a todos los enlaces internos
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Inicialización agresiva para prevenir delays
+    function forceInit() {
+        if (initialized) return;
+        
+        // Forzar override del scroll nativo
+        document.documentElement.style.scrollBehavior = 'auto';
+        document.body.style.scrollBehavior = 'auto';
+        
+        // Pre-cachear elementos comunes para evitar delays en querySelector
+        const links = document.querySelectorAll('a[href^="#"]');
+        const smoothElements = document.querySelectorAll('.smooth-scroll');
+        
+        // Event listeners con captura inmediata
+        links.forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                e.stopPropagation();
+                e.stopImmediatePropagation();
                 
                 const href = this.getAttribute('href');
                 if (href && href !== '#' && href !== '#!') {
+                    // Sin setTimeout, sin delays - ejecutar inmediatamente
                     smoothScroll(href);
                 }
-            });
+            }, true); // Captura en fase de captura para mayor velocidad
         });
         
-        // Aplicar a elementos con clase .smooth-scroll
-        document.querySelectorAll('.smooth-scroll').forEach(element => {
+        smoothElements.forEach(element => {
             element.addEventListener('click', function(e) {
                 e.preventDefault();
-                e.stopPropagation();
+                e.stopImmediatePropagation();
                 
                 const target = this.getAttribute('data-target') || 
                               this.getAttribute('href') || 
@@ -148,50 +113,46 @@
                 if (target) {
                     smoothScroll(target);
                 }
-            });
+            }, true);
         });
         
-        // Manejar URLs con hash al cargar la página
-        if (window.location.hash) {
-            setTimeout(() => {
-                smoothScroll(window.location.hash);
-            }, 50);
-        }
-        
-        console.log('✅ Scroll suave mejorado activado');
+        initialized = true;
+        console.log('✅ Scroll optimizado - Sin delays activado');
     }
     
-    // Función pública para scroll programático rápido
-    window.scrollToSection = function(sectionId, duration = 50) {
+    // Función pública inmediata
+    window.scrollToSection = function(sectionId, duration = 300) {
         if (typeof sectionId === 'string' && !sectionId.startsWith('#')) {
             sectionId = '#' + sectionId;
         }
         smoothScroll(sectionId, duration);
     };
     
-    // Función para configurar opciones
+    // Configuración inmediata
     window.setSmoothScrollConfig = function(newConfig) {
         Object.assign(config, newConfig);
     };
     
-    // Función para scroll con offset personalizado
-    window.scrollToSectionWithOffset = function(sectionId, offset) {
-        const originalOffset = config.offset;
-        config.offset = offset;
-        smoothScroll(sectionId);
-        config.offset = originalOffset;
-    };
-    
-    // Inicializar cuando el DOM esté listo
+    // Inicialización inmediata y agresiva
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', forceInit);
     } else {
-        init();
+        forceInit();
     }
     
-    // Reinicializar en cambios de orientación móvil
-    window.addEventListener('orientationchange', function() {
-        setTimeout(init, 100);
-    });
+    // Backup de inicialización
+    setTimeout(forceInit, 0);
+    
+    // Override completo del scroll behavior nativo
+    const style = document.createElement('style');
+    style.textContent = `
+        html, body {
+            scroll-behavior: auto !important;
+        }
+        * {
+            scroll-behavior: auto !important;
+        }
+    `;
+    document.head.appendChild(style);
     
 })();
