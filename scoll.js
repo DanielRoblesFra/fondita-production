@@ -121,7 +121,7 @@
     }
     
     // Función pública inmediata
-    window.scrollToSection = function(sectionId, duration = 300) {
+    window.scrollToSection = function(sectionId, duration = 500) {
         if (typeof sectionId === 'string' && !sectionId.startsWith('#')) {
             sectionId = '#' + sectionId;
         }
@@ -147,9 +147,6 @@
     const style = document.createElement('style');
     style.textContent = `
         html, body {
-            scroll-behavior: auto !important;
-        }
-        * {
             scroll-behavior: auto !important;
         }
     `;
