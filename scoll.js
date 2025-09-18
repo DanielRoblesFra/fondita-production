@@ -7,7 +7,7 @@
     
     // Configuración ultra-optimizada
     const config = {
-        duration: 300,
+        duration: 600,
         offset: 0,
         mobileOffset: 70
     };
