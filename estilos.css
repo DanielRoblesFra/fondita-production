@@ -554,7 +554,7 @@ iframe {
     margin-top: 6px;
 }
 
-/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
+/* ===== MEDIAs PARA RESPONSIVIDAD ===== */
 
 /* TABLETS (768px - 1023px) */
 @media screen and (max-width: 1023px) {
@@ -936,50 +936,50 @@ iframe {
     }
 }
 
-/* LAPTOPS PEQUEÑAS (1024px - 1199px) - CLAVE PARA TU PROBLEMA */
+/* LAPTOPS PEQUEÑAS (1024px - 1199px) - CORREGIDO PARA 1280px */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
     #menuSemanaContainer {
-        max-width: 1150px;
-        gap: 1rem;
+        max-width: 1200px;
+        gap: 0.7rem;
         justify-content: center;
         display: flex;
         flex-wrap: nowrap;
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
     
     .card {
-        width: 200px;
-        height: 350px;
+        width: 180px;        /* Más pequeñas */
+        height: 320px;       /* Más bajas */
         flex-shrink: 0;
     }
     
     .card-front {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
     
     .card-back {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
     
     .card-front h1 {
-        font-size: 2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.7rem;   /* Texto más pequeño */
+        margin-bottom: 0.6rem;
     }
     
     .card-front p {
-        font-size: 1.1rem;
-        letter-spacing: 2px;
+        font-size: 1rem;
+        letter-spacing: 1px;
     }
     
     .dish-image {
-        width: 120px;
-        height: 120px;
+        width: 100px;        /* Imagen más pequeña */
+        height: 100px;
         margin-bottom: 1rem;
     }
     
     .menu-list li {
-        font-size: 0.9rem;
-        margin-bottom: 0.4rem;
-        letter-spacing: 2px;
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+        letter-spacing: 1px;
     }
 }
