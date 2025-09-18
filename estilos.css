@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
@@ -152,7 +155,7 @@ nav {
 
 /* --- MENU INICIO --- */
 .inicio {
-    background: url("img/portada.avif?v=1758220878957") no-repeat center center/cover;
+    background: url("img/portada.avif?v=1758238167387") no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     background-size: cover;
@@ -554,182 +557,10 @@ iframe {
     margin-top: 6px;
 }
 
-/* ===== MEDIAs PARA RESPONSIVIDAD ===== */
-
-
-/* ===== MEDIA QUERIES PARA RESPONSIVIDAD COMPLETA ===== */
-
-/* PANTALLAS MUY GRANDES (1400px+) */
-@media screen and (min-width: 1400px) {
-    #menuSemanaContainer {
-        max-width: 1400px;
-        gap: 2rem;
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
-    .card {
-        width: 260px;
-        height: 400px;
-        flex-shrink: 0;
-    }
-    
-    .card-front h1 {
-        font-size: 2.5rem;
-    }
-    
-    .card-front p {
-        font-size: 1.4rem;
-    }
-    
-    .dish-image {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-/* LAPTOPS GRANDES (1200px - 1399px) */
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-    #menuSemanaContainer {
-        max-width: 1200px;
-        gap: 1rem;
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    
-    .card {
-        width: 200px;
-        height: 380px;
-        flex-shrink: 0;
-    }
-    
-    .card-front h1 {
-        font-size: 2rem;
-    }
-    
-    .card-front p {
-        font-size: 1.2rem;
-    }
-    
-    .dish-image {
-        width: 130px;
-        height: 130px;
-    }
-}
-
-/* LAPTOPS MEDIANAS - TU CASO (1024px - 1199px) */
-@media screen and (min-width: 1024px) and (max-width: 1199px) {
-    nav {
-        padding: 0 1rem;
-    }
-    
-    .logo {
-        min-width: 200px;
-        font-size: 1rem;
-    }
-    
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .nav-menu {
-        gap: 1.5rem;
-    }
-    
-    .nav-menu a {
-        font-size: 1rem;
-    }
-    
-    .inicio .info h2 {
-        font-size: 3.5rem;
-    }
-    
-    .inicio .info p {
-        font-size: 1.1rem;
-    }
-    
-    .book {
-        width: 320px;
-        height: 420px;
-    }
-    
-    .content {
-        padding: 25px;
-    }
-    
-    .page-image {
-        width: 110px;
-        height: 110px;
-    }
-    
-    /* MENÚ SEMANAL - 5 CARTAS EN FILA */
-    #menuSemanaContainer {
-        max-width: 1100px;
-        gap: 0.8rem;
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
-        padding: 0 1rem;
-    }
-    
-    .card {
-        width: 180px;
-        height: 320px;
-        flex-shrink: 0;
-    }
-    
-    .card-front {
-        padding: 1.2rem;
-    }
-    
-    .card-back {
-        padding: 1.2rem;
-    }
-    
-    .card-front h1 {
-        font-size: 1.6rem;
-        margin-bottom: 0.8rem;
-    }
-    
-    .card-front p {
-        font-size: 1rem;
-        letter-spacing: 2px;
-    }
-    
-    .dish-image {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 1rem;
-    }
-    
-    .menu-list li {
-        font-size: 0.8rem;
-        margin-bottom: 0.4rem;
-        letter-spacing: 1px;
-    }
-    
-    #ubicacion {
-        flex-direction: row;
-    }
-    
-    .map, .text-map {
-        width: 50%;
-    }
-    
-    iframe {
-        height: 400px;
-    }
-    
-    .preguntas-container h2 {
-        font-size: 2.2rem;
-    }
-}
+/* ===== MEDIA QUERIES PARA RESPONSIVIDAD ===== */
 
 /* TABLETS (768px - 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     nav {
         padding: 0 1rem;
     }
@@ -774,13 +605,9 @@ iframe {
         height: 100px;
     }
     
-    /* MENÚ SEMANAL - 2 FILAS */
-    #menuSemanaContainer {
-        max-width: 800px;
-        gap: 1rem;
-        justify-content: center;
-        display: flex;
+    .cards-container {
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     .card {
@@ -819,8 +646,8 @@ iframe {
     }
 }
 
-/* MÓVILES (480px - 767px) */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+/* MÓVILES (hasta 767px) */
+@media screen and (max-width: 767px) {
     header {
         padding: 0.5rem 0;
     }
@@ -911,8 +738,7 @@ iframe {
         padding-bottom: 2rem;
     }
     
-    /* MENÚ SEMANAL - COLUMNA */
-    #menuSemanaContainer {
+    .cards-container {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
@@ -1025,8 +851,8 @@ iframe {
     }
 }
 
-/* MÓVILES PEQUEÑOS (hasta 479px) */
-@media screen and (max-width: 479px) {
+/* MÓVILES PEQUEÑOS (hasta 480px) */
+@media screen and (max-width: 480px) {
     .inicio .info h2 {
         font-size: 2rem;
     }
@@ -1041,7 +867,7 @@ iframe {
         height: 320px;
     }
     
-    #menuSemanaContainer {
+    .cards-container {
         gap: 1.5rem;
     }
     
