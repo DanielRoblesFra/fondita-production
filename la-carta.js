@@ -4,7 +4,7 @@ let pages = [];
 
 // Función para crear las páginas dinámicamente desde la API
 function cargarCarta() {
-    fetch("/api/menu")
+    fetch("https://fondita.onrender.com/api/menu")
         .then(res => res.json())
         .then(data => {
         container.innerHTML = "";
