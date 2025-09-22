@@ -4,7 +4,7 @@ let pages = [];
 
 // Función para crear las páginas dinámicamente desde la API
 function cargarCarta() {
-    fetch("https://fondita.onrender.com/api/menu")
+    fetch("/api/menu")
         .then(res => res.json())
         .then(data => {
         container.innerHTML = "";
@@ -44,22 +44,9 @@ function cargarCarta() {
             </div>
             `;
 
-            // Página 4
-            const page3 = document.createElement("div");
-            page3.className = "page";
-            page3.innerHTML = `
-            <div class="content">
-                <p>Costo del platillo: ${platillo.precio}</p>
-                <p>${platillo.pago.mensaje}</p>
-                <p>${platillo.pago.banco}</p>
-                <div class="back"></div>
-            </div>
-            `;
-
             container.appendChild(page1);
             container.appendChild(page2);
             container.appendChild(page3);
-            container.appendChild(page4);
         });
 
         // Actualizar la lista de páginas para flipPage
