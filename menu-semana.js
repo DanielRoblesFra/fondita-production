@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Martes",
-      "fecha": "2025-09-02",
+      "fecha": "2025-09-23",
       "imagen": "martes.jpg",
       "platillos": [
         "Platillo",
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-09-03",
+      "fecha": "2025-09-24",
       "imagen": "miercoles.jpg",
       "platillos": [
         "Platillo",
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-09-05",
+      "fecha": "2025-09-26",
       "imagen": "viernes.jpg",
       "platillos": [
         "Platillo",
