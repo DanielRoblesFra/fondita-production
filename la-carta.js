@@ -7,7 +7,7 @@ let pages = [];
 const menuData = {
   "carta": [
     {
-      "nombre": "Tacos al Pastor",
+      "nombre": "Observaciones importantes",
       "descripcion": "Tortilla y carne",
       "precio": "$290",
       "pago": {
