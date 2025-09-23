@@ -1,31 +1,81 @@
+// ✅ VERSIÓN AUTÓNOMA - NO DEPENDE DE RENDER
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("menuSemanaContainer"); // Contenedor de las cards
+    const container = document.getElementById("menuSemanaContainer");
 
-    fetch("https://fondita.onrender.com/api/menu")
-        .then(res => res.json())
-        .then(data => {
+    // Datos embebidos directamente
+    const menuData = {
+  "carta": [
+    {
+      "nombre": "Tacos al Pastor",
+      "descripcion": "Tortilla y carne",
+      "precio": "$290",
+      "pago": {
+        "mensaje": "💳 Transferencia a: Claudia Franco",
+        "banco": "BBVA: **** **** **** ***69"
+      }
+    }
+  ],
+  "menu_semana": [
+    {
+      "dia": "Lunes",
+      "fecha": "2025-09-22",
+      "imagen": "1758574818454.jpg",
+      "platillos": [
+        "Platillo",
+        "Platillo"
+      ]
+    },
+    {
+      "dia": "Martes",
+      "fecha": "2025-09-02",
+      "imagen": "martes.jpg",
+      "platillos": [
+        "Platillo",
+        "Platillo"
+      ]
+    },
+    {
+      "dia": "Miércoles",
+      "fecha": "2025-09-03",
+      "imagen": "miercoles.jpg",
+      "platillos": [
+        "Platillo",
+        "Platillo"
+      ]
+    },
+    {
+      "dia": "Jueves",
+      "fecha": "2025-09-25",
+      "imagen": "1758574832865.jpg",
+      "platillos": [
+        "Platillo",
+        "Platillo"
+      ]
+    },
+    {
+      "dia": "Viernes",
+      "fecha": "2025-09-05",
+      "imagen": "viernes.jpg",
+      "platillos": [
+        "Platillo",
+        "Platillo"
+      ]
+    }
+  ]
+};
+
+    if (container && menuData.menu_semana) {
         container.innerHTML = "";
 
-        data.menu_semana.forEach(dia => {
+        menuData.menu_semana.forEach(dia => {
             const card = document.createElement("div");
             card.className = "card";
-            card.innerHTML = `
-            <div class="card-inner">
-                <div class="card-front">
-                <h1>${dia.dia}</h1>
-                <p>${dia.fecha}</p>
-                </div>
-                <div class="card-back">
-                <img src="img/${dia.imagen}" alt="${dia.dia}" class="dish-image">
-                <ul class="menu-list">
-                    ${dia.platillos.map(p => `<li>${p}</li>`).join("")}
-                </ul>
-                </div>
-            </div>
-            `;
+            
+            const platillosHTML = dia.platillos.map(p => '<li>' + p + '</li>').join("");
+            
+            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + dia.fecha + '</p></div><div class="card-back"><img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image"><ul class="menu-list">' + platillosHTML + '</ul></div></div>';
 
             container.appendChild(card);
         });
-        })
-        .catch(err => console.error("Error cargando menú semanal:", err));
+    }
 });
