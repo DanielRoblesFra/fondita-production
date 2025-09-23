@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   "carta": [
     {
       "nombre": "Observaciones importantes",
-      "descripcion": "Tortilla y carne",
+      "descripcion": "Texto informativo",
       "precio": "$290",
       "pago": {
         "mensaje": "💳 Transferencia a: Claudia Franco",
@@ -21,26 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-09-22",
       "imagen": "1758650559059.jpg",
       "platillos": [
+        "Texto",
         "Platillo",
-        "Platillo"
+        "texto"
       ]
     },
     {
       "dia": "Martes",
       "fecha": "2025-09-23",
-      "imagen": "martes.jpg",
+      "imagen": "1758651802707.jpg",
       "platillos": [
+        "Texto",
         "Platillo",
-        "Platillo"
+        "texto"
       ]
     },
     {
       "dia": "Miércoles",
       "fecha": "2025-09-24",
-      "imagen": "miercoles.jpg",
+      "imagen": "1758651809332.jpg",
       "platillos": [
+        "Texto",
         "Platillo",
-        "Platillo"
+        "texto"
       ]
     },
     {
@@ -48,17 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-09-25",
       "imagen": "1758574832865.jpg",
       "platillos": [
+        "Texto",
         "Platillo",
-        "Platillo"
+        "texto"
       ]
     },
     {
       "dia": "Viernes",
       "fecha": "2025-09-26",
-      "imagen": "viernes.jpg",
+      "imagen": "1758651816041.jpg",
       "platillos": [
+        "Texto",
         "Platillo",
-        "Platillo"
+        "texto"
       ]
     }
   ]
