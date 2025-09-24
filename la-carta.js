@@ -93,12 +93,19 @@ function cargarCarta() {
         page3.innerHTML = '<div class="content"><p>Costo del platillo: ' + platillo.precio + '</p><p>' + platillo.pago.mensaje + '</p><p>' + platillo.pago.banco + '</p><div class="back"></div></div>';
 
         // 🎯 PÁGINA 4 - SOLO SI ESTÁ ACTIVA EL FEATURE FLAG
-        // ⚠️ PÁGINA 4 DESACTIVADA (Feature Flag = false)
+        
+        // ✅ PÁGINA 4 ACTIVADA
+        const page4 = document.createElement("div");
+        page4.className = "page";
+        const textoPagina4 = platillo.pagina4 || 'Información adicional del restaurante';
+        page4.innerHTML = '<div class="content"><h2>Información Adicional</h2><p>' + textoPagina4 + '</p><div class="back"></div></div>';
+        container.appendChild(page4);
+        
 
         container.appendChild(page1);
         container.appendChild(page2);
         container.appendChild(page3);
-        
+        container.appendChild(page4);
 
         pages = document.querySelectorAll('.page');
     }
