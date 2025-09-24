@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuData = {
   "carta": [
     {
-      "nombre": "Notas de portda",
+      "nombre": "Notas de portada",
       "descripcion": "Texto informativo",
       "precio": "$190",
       "pago": {
