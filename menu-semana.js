@@ -6,21 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuData = {
   "carta": [
     {
-      "nombre": "Observaciones importantes",
+      "nombre": "Notas de portda",
       "descripcion": "Texto informativo",
-      "precio": "$290",
+      "precio": "$190",
       "pago": {
         "mensaje": "💳 Transferencia a: Claudia Franco",
-        "banco": "BBVA: **** **** **** ***69"
+        "banco": "BBVA: 1234 5678 9101"
       },
-      "pagina4": "wqeqweqwdqwdqddasdas"
+      "pagina4": "Texto hoja 4",
+      "tituloCarta": "Titulo Prueba"
     }
   ],
   "menu_semana": [
     {
       "dia": "Lunes",
       "fecha": "2025-09-22",
-      "imagen": "1758650559059.jpg",
+      "imagen": "1758745644542.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Martes",
       "fecha": "2025-09-23",
-      "imagen": "1758651802707.jpg",
+      "imagen": "1758745652899.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Miércoles",
       "fecha": "2025-09-24",
-      "imagen": "1758651809332.jpg",
+      "imagen": "1758745660508.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Jueves",
       "fecha": "2025-09-25",
-      "imagen": "1758574832865.jpg",
+      "imagen": "1758745676308.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Viernes",
       "fecha": "2025-09-26",
-      "imagen": "1758651816041.jpg",
+      "imagen": "1758745688021.jpg",
       "platillos": [
         "Texto",
         "Platillo",

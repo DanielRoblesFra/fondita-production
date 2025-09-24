@@ -1,4 +1,4 @@
-// ✅ VERSIÓN AUTÓNOMA - CON FEATURE FLAGS
+
 let currentPage = 0;
 const container = document.getElementById("bookContainer");
 let pages = [];
@@ -7,21 +7,22 @@ let pages = [];
 const menuData = {
   "carta": [
     {
-      "nombre": "Observaciones importantes",
+      "nombre": "Notas de portda",
       "descripcion": "Texto informativo",
-      "precio": "$290",
+      "precio": "$190",
       "pago": {
         "mensaje": "💳 Transferencia a: Claudia Franco",
-        "banco": "BBVA: **** **** **** ***69"
+        "banco": "BBVA: 1234 5678 9101"
       },
-      "pagina4": "wqeqweqwdqwdqddasdas"
+      "pagina4": "Texto hoja 4",
+      "tituloCarta": "Titulo Prueba"
     }
   ],
   "menu_semana": [
     {
       "dia": "Lunes",
       "fecha": "2025-09-22",
-      "imagen": "1758650559059.jpg",
+      "imagen": "1758745644542.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -31,7 +32,7 @@ const menuData = {
     {
       "dia": "Martes",
       "fecha": "2025-09-23",
-      "imagen": "1758651802707.jpg",
+      "imagen": "1758745652899.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -41,7 +42,7 @@ const menuData = {
     {
       "dia": "Miércoles",
       "fecha": "2025-09-24",
-      "imagen": "1758651809332.jpg",
+      "imagen": "1758745660508.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -51,7 +52,7 @@ const menuData = {
     {
       "dia": "Jueves",
       "fecha": "2025-09-25",
-      "imagen": "1758574832865.jpg",
+      "imagen": "1758745676308.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -61,7 +62,7 @@ const menuData = {
     {
       "dia": "Viernes",
       "fecha": "2025-09-26",
-      "imagen": "1758651816041.jpg",
+      "imagen": "1758745688021.jpg",
       "platillos": [
         "Texto",
         "Platillo",
@@ -80,7 +81,8 @@ function cargarCarta() {
         // Página 1 (existente)
         const page1 = document.createElement("div");
         page1.className = "page";
-        page1.innerHTML = '<div class="content"><h2>Carta del día</h2><img src="img/logo.png" alt="Logo Restaurante" class="page-image"><p>' + platillo.nombre + '</p><div class="back"></div></div>';
+        const tituloCarta = platillo.tituloCarta || "Carta del día";
+        page1.innerHTML = '<div class="content"><h2>' + tituloCarta + '</h2><img src="img/logo.png" alt="Logo Restaurante" class="page-image"><p>' + platillo.nombre + '</p><div class="back"></div></div>';
 
         // Página 2 (existente)
         const page2 = document.createElement("div");
@@ -92,27 +94,18 @@ function cargarCarta() {
         page3.className = "page";
         page3.innerHTML = '<div class="content"><p>Costo del platillo: ' + platillo.precio + '</p><p>' + platillo.pago.mensaje + '</p><p>' + platillo.pago.banco + '</p><div class="back"></div></div>';
 
-        // 🎯 PÁGINA 4 - SOLO SI ESTÁ ACTIVA EL FEATURE FLAG
-    
-    const page4 = document.createElement("div");
-    page4.className = "page";
-    const textoPagina4 = platillo.pagina4 || 'Información adicional del restaurante';
-    page4.innerHTML = '<div class="content"><h2>Información Adicional</h2><p style="color: red; font-weight: bold;">' + textoPagina4 + '</p><div class="back"></div></div>';
-    container.appendChild(page4);
-    
+        // PÁGINA 4 
+        const page4 = document.createElement("div");
+        page4.className = "page";
+        const textoPagina4 = platillo.pagina4 || 'Información adicional del restaurante';
+        page4.innerHTML = '<div class="content"><p>' + textoPagina4 + '</p><div class="back"></div></div>';
 
-    container.appendChild(page1);
-    container.appendChild(page2);
-    container.appendChild(page3);
-    container.appendChild(page4);
+        container.appendChild(page1);
+        container.appendChild(page2);
+        container.appendChild(page3);
+        container.appendChild(page4);
 
-pages = document.querySelectorAll('.page');
-// 🔍 DEBUG
-console.log('PÁGINA 4 ACTIVADA:', true);
-console.log('TOTAL PÁGINAS:', pages.length);
-pages.forEach((page, index) => {
-    console.log('Página', index + 1, ':', page.innerHTML.substring(0, 100) + '...');
-});
+        pages = document.querySelectorAll('.page');
     }
 }
 
