@@ -13,7 +13,8 @@ const menuData = {
       "pago": {
         "mensaje": "💳 Transferencia a: Claudia Franco",
         "banco": "BBVA: **** **** **** ***69"
-      }
+      },
+      "pagina4": "wqeqweqwdqwdqddasdas"
     }
   ],
   "menu_semana": [
