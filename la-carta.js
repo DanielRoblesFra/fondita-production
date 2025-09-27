@@ -24,9 +24,10 @@ const menuData = {
       "fecha": "2025-09-22",
       "imagen": "1759010187854.jpg",
       "platillos": [
-        "Texto",
-        "Platillo",
-        "texto"
+        "Arroz blanco",
+        "Mole encacahuetado",
+        "Frijoles de olla",
+        "Postre"
       ]
     },
     {
