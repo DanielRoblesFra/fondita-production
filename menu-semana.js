@@ -31,12 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Martes",
-      "fecha": "2025-09-23",
-      "imagen": "1758745652899.jpg",
+      "fecha": "2025-09-30",
+      "imagen": "1759010920868.jpg",
       "platillos": [
-        "Texto",
-        "Platillo",
-        "texto"
+        "Sopa de fideos",
+        "Salpicon de res",
+        "Frijoles de la olla",
+        "Postre"
       ]
     },
     {
