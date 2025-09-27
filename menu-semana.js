@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Lunes",
       "fecha": "2025-09-22",
-      "imagen": "1758745644542.jpg",
+      "imagen": "1759010187854.jpg",
       "platillos": [
         "Texto",
         "Platillo",
