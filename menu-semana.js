@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Jueves",
       "fecha": "2025-10-02",
-      "imagen": "1759017474160.jpg",
+      "imagen": "1759689410853.jpg",
       "platillos": [
         "Sopa de habas",
         "Ceviche con tostadas",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Viernes",
       "fecha": "2025-10-03",
-      "imagen": "1759017495149.jpeg",
+      "imagen": "1759689424778.jpeg",
       "platillos": [
         "Carne en su jugo (estilo Jalisco)",
         "Postre"
