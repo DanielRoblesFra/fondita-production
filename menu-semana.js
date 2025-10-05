@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Martes",
       "fecha": "2025-09-30",
-      "imagen": "1759010920868.jpg",
+      "imagen": "1759689012357.jpeg",
       "platillos": [
         "Sopa de fideos",
         "Salpicon de res",
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Miércoles",
       "fecha": "2025-10-01",
-      "imagen": "1759017457614.jpg",
+      "imagen": "1759688994888.jpg",
       "platillos": [
         "Arroz rojo",
         "Pollo al limón",
