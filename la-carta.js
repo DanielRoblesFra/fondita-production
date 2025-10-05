@@ -58,7 +58,7 @@ const menuData = {
       "imagen": "1759689410853.jpg",
       "platillos": [
         "Arroz blanco",
-        "Tortitas de camaron con nopales",
+        "Tortitas de camarón con nopales",
         "Frijoles de la olla",
         "Postre"
       ]
