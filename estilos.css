@@ -482,7 +482,7 @@ button:hover {
     color: #fff;
     padding-bottom: 70px;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 #menuSemanaContainer {
@@ -547,13 +547,13 @@ button:hover {
 .card-front h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .card-front p {
     font-size: 1.4rem;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .dish-image {
@@ -572,7 +572,7 @@ button:hover {
 }
 
 .menu-list li {
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
 }
