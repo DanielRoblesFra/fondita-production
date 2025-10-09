@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Jueves",
       "fecha": "2025-10-09",
-      "imagen": "1759689410853.jpg",
+      "imagen": "1760019241818.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
