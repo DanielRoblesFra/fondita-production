@@ -66,7 +66,7 @@ const menuData = {
     {
       "dia": "Viernes",
       "fecha": "2025-10-10",
-      "imagen": "1759689424778.jpeg",
+      "imagen": "1760019248915.jpeg",
       "platillos": [
         "Lo sentimos este día no habrá servicio por cuestiones personales",
         "agradecemos su comprensión."
