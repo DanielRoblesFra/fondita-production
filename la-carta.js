@@ -33,7 +33,7 @@ const menuData = {
     {
       "dia": "Martes",
       "fecha": "2025-10-07",
-      "imagen": "1759951467982.jpeg",
+      "imagen": "1760019056262.jpeg",
       "platillos": [
         "Crema de zanahoria",
         "Hamburguesas de carne de res",
