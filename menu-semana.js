@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Lunes",
       "fecha": "2025-10-06",
-      "imagen": "1759951458738.jpg",
+      "imagen": "1760019045554.jpg",
       "platillos": [
         "Arroz blanco con elote",
         "Tortitas de papa con atún",
