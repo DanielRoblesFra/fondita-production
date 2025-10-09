@@ -43,7 +43,7 @@ const menuData = {
     {
       "dia": "Miércoles",
       "fecha": "2025-10-08",
-      "imagen": "1760019235549.jpg",
+      "imagen": "1760024249972.jpg",
       "platillos": [
         "Arroz rojo con verduras",
         "Queso con rajas en salsa asada",
