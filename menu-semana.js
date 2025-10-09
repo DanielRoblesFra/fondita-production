@@ -1,8 +1,5 @@
-// ✅ VERSIÓN AUTÓNOMA - NO DEPENDE DE RENDER
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("menuSemanaContainer");
-
-    // Datos embebidos directamente
     const menuData = {
   "carta": [
     {
@@ -21,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Lunes",
       "fecha": "2025-10-06",
-      "imagen": "1760019222252.jpg",
+      "imagen": "1760024226044.jpg",
       "platillos": [
         "Arroz blanco con elote",
         "Tortitas de papa con atún",
@@ -76,15 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (container && menuData.menu_semana) {
         container.innerHTML = "";
-
         menuData.menu_semana.forEach(dia => {
+            const platillosHTML = dia.platillos.map(p => '<li>' + p + '</li>').join("");
             const card = document.createElement("div");
             card.className = "card";
-            
-            const platillosHTML = dia.platillos.map(p => '<li>' + p + '</li>').join("");
-            
             card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + dia.fecha + '</p></div><div class="card-back"><img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image"><ul class="menu-list">' + platillosHTML + '</ul></div></div>';
-
             container.appendChild(card);
         });
     }
