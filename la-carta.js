@@ -54,7 +54,7 @@ const menuData = {
     {
       "dia": "Jueves",
       "fecha": "2025-10-09",
-      "imagen": "1760364954046.jpeg",
+      "imagen": "1760364967503.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
