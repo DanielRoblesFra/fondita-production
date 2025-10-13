@@ -21,7 +21,7 @@ const menuData = {
     {
       "dia": "Lunes",
       "fecha": "2025-10-06",
-      "imagen": "1760372783161.jpg",
+      "imagen": "1760392644349.jpg",
       "platillos": [
         "Arroz blanco con elote",
         "Tortitas de papa con atún",
