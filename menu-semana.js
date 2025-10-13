@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Miércoles",
       "fecha": "2025-10-08",
-      "imagen": "1760364945501.jpg",
+      "imagen": "1760373740012.jpg",
       "platillos": [
         "Arroz rojo con verduras",
         "Queso con rajas en salsa asada",
