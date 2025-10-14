@@ -64,10 +64,10 @@ const menuData = {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-18",
+      "fecha": "2025-10-17",
       "imagen": "1760467547001.jpg",
       "platillos": [
-        "Segunda prueba."
+        "Primera prueba."
       ]
     }
   ]
