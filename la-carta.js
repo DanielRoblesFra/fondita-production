@@ -65,7 +65,7 @@ const menuData = {
     {
       "dia": "Viernes",
       "fecha": "2025-10-17",
-      "imagen": "1760467547001.jpg",
+      "imagen": "1760472222057.jpg",
       "platillos": [
         "Primera prueba."
       ]
