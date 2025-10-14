@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "imagen": "1760382762085.jpg",
       "platillos": [
         "Lo sentimos este día no habrá servicio por cuestiones personales",
-        "agradecemos su comprensión."
+        "lo agradecemos su comprensión."
       ]
     }
   ]
