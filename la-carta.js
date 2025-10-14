@@ -67,7 +67,7 @@ const menuData = {
       "fecha": "2025-10-17",
       "imagen": "1760382762085.jpg",
       "platillos": [
-        "Texto  prueba."
+        "Texto texto"
       ]
     }
   ]
