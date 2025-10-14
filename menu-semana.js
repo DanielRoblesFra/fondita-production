@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-14",
+      "fecha": "2025-10-07",
       "imagen": "1760373690586.jpeg",
       "platillos": [
         "Crema de zanahoria",
@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Viernes",
       "fecha": "2025-10-17",
-      "imagen": "1760382762085.jpg",
+      "imagen": "1760463203242.jpg",
       "platillos": [
-        "Texto texto"
+        "Texto prueba."
       ]
     }
   ]
