@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-17",
+      "fecha": "2025-10-18",
       "imagen": "1760467547001.jpg",
       "platillos": [
-        "Texto prueba prueba."
+        "Segunda prueba."
       ]
     }
   ]
