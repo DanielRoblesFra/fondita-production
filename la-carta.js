@@ -64,11 +64,11 @@ const menuData = {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-16",
+      "fecha": "2025-10-17",
       "imagen": "1760382762085.jpg",
       "platillos": [
         "Lo sentimos este día no habrá servicio por cuestiones personales",
-        "agradecemos su comprensión."
+        "agradecemos su comprensión.."
       ]
     }
   ]
