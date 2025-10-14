@@ -61,11 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-17",
+      "fecha": "2025-10-16",
       "imagen": "1760382762085.jpg",
       "platillos": [
         "Lo sentimos este día no habrá servicio por cuestiones personales",
-        "lo agradecemos su comprensión."
+        "agradecemos su comprensión."
       ]
     }
   ]
