@@ -1,8 +1,10 @@
 
+// ARCHIVO AUTÓNOMO - NO DEPENDE DE RENDER
 let currentPage = 0;
 const container = document.getElementById("bookContainer");
 let pages = [];
 
+// DATOS EMBEBIDOS - NO HACE FETCH
 const menuData = {
   "carta": [
     {
@@ -54,7 +56,7 @@ const menuData = {
     {
       "dia": "Jueves",
       "fecha": "2025-10-16",
-      "imagen": "1760374150650.jpg",
+      "imagen": "1760543110625.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
@@ -63,18 +65,31 @@ const menuData = {
       ]
     },
     {
-      "dia": "Lunes",
-      "fecha": "2025-10-18",
+      "dia": "Viernes",
+      "fecha": "2025-10-15",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Segunda",
+        "Primer",
         "prueba."
       ]
+    },
+    {
+      "dia": "Sábado",
+      "fecha": "",
+      "imagen": "",
+      "platillos": []
+    },
+    {
+      "dia": "Domingo",
+      "fecha": "",
+      "imagen": "",
+      "platillos": []
     }
   ]
 };
 
 function cargarCarta() {
+    if (!container) return;
     container.innerHTML = "";
     
     if (menuData.carta && menuData.carta.length > 0) {
@@ -82,11 +97,11 @@ function cargarCarta() {
         const tituloCarta = platillo.tituloCarta || "Carta del día";
         const textoPagina4 = platillo.pagina4 || 'Información adicional del restaurante';
         
-        // Páginas del libro
+        // Páginas del libro CON DATOS ACTUALES
         const pagesHTML = [
-            '<div class="content"><h2>' + tituloCarta + '</h2><img src="img/logo.png" alt="Logo Restaurante" class="page-image"><p>' + platillo.nombre + '</p><div class="back"></div></div>',
-            '<div class="content"><h2>' + platillo.nombre + '</h2><p>' + platillo.descripcion + '</p><div class="back"></div></div>',
-            '<div class="content"><p>Costo del platillo: ' + platillo.precio + '</p><p>' + platillo.pago.mensaje + '</p><p>' + platillo.pago.banco + '</p><div class="back"></div></div>',
+            '<div class="content"><h2>' + tituloCarta + '</h2><img src="img/logo.png" alt="Logo Restaurante" class="page-image"><p>' + (platillo.nombre || '') + '</p><div class="back"></div></div>',
+            '<div class="content"><h2>' + (platillo.nombre || '') + '</h2><p>' + (platillo.descripcion || '') + '</p><div class="back"></div></div>',
+            '<div class="content"><p>Costo del platillo: ' + (platillo.precio || '') + '</p><p>' + (platillo.pago?.mensaje || '') + '</p><p>' + (platillo.pago?.banco || '') + '</p><div class="back"></div></div>',
             '<div class="content"><p>' + textoPagina4 + '</p><div class="back"></div></div>'
         ];
         
@@ -111,4 +126,5 @@ function flipPage(){
     }
 }
 
+// Cargar automáticamente al iniciar
 document.addEventListener("DOMContentLoaded", cargarCarta);

@@ -1,5 +1,9 @@
+
+// ARCHIVO AUTÓNOMO - NO DEPENDE DE RENDER
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("menuSemanaContainer");
+    
+    // DATOS EMBEBIDOS - NO HACE FETCH
     const menuData = {
   "carta": [
     {
@@ -51,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Jueves",
       "fecha": "2025-10-16",
-      "imagen": "1760374150650.jpg",
+      "imagen": "1760543110625.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
@@ -60,13 +64,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      "dia": "Lunes",
-      "fecha": "2025-10-18",
+      "dia": "Viernes",
+      "fecha": "2025-10-15",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Segunda",
+        "Primer",
         "prueba."
       ]
+    },
+    {
+      "dia": "Sábado",
+      "fecha": "",
+      "imagen": "",
+      "platillos": []
+    },
+    {
+      "dia": "Domingo",
+      "fecha": "",
+      "imagen": "",
+      "platillos": []
     }
   ]
 };
@@ -74,10 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (container && menuData.menu_semana) {
         container.innerHTML = "";
         menuData.menu_semana.forEach(dia => {
-            const platillosHTML = dia.platillos.map(p => '<li>' + p + '</li>').join("");
+            if (!dia.dia) return;
+            
+            const platillosHTML = dia.platillos 
+                ? dia.platillos.map(p => '<li>' + p + '</li>').join("")
+                : "";
+                
             const card = document.createElement("div");
             card.className = "card";
-            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + dia.fecha + '</p></div><div class="card-back"><img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image"><ul class="menu-list">' + platillosHTML + '</ul></div></div>';
+            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + (dia.fecha || '') + '</p></div><div class="card-back"><img src="img/' + (dia.imagen || 'default.jpg') + '" alt="' + dia.dia + '" class="dish-image"><ul class="menu-list">' + platillosHTML + '</ul></div></div>';
             container.appendChild(card);
         });
     }
