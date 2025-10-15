@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-13",
+      "fecha": "2025-10-16",
       "imagen": "1760392644349.jpg",
       "platillos": [
         "Arroz blanco con elote",
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-07",
+      "fecha": "2025-10-15",
       "imagen": "1760373690586.jpeg",
       "platillos": [
         "Crema de zanahoria",
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Jueves",
       "fecha": "2025-10-16",
-      "imagen": "1760543110625.jpg",
+      "imagen": "1760546461723.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
@@ -65,31 +65,20 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-15",
+      "fecha": "2025-10-17",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Primer",
+        "Segunda",
         "prueba."
       ]
-    },
-    {
-      "dia": "Sábado",
-      "fecha": "",
-      "imagen": "",
-      "platillos": []
-    },
-    {
-      "dia": "Domingo",
-      "fecha": "",
-      "imagen": "",
-      "platillos": []
     }
   ]
 };
 
     if (container && menuData.menu_semana) {
         container.innerHTML = "";
-        menuData.menu_semana.forEach(dia => {
+        // ✅ MOSTRAR SOLO LOS PRIMEROS 5 DÍAS (Lunes a Viernes)
+        menuData.menu_semana.slice(0, 5).forEach(dia => {
             if (!dia.dia) return;
             
             const platillosHTML = dia.platillos 
