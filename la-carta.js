@@ -11,7 +11,7 @@ const menuData = {
       "nombre": "Notas de relevancia",
       "descripcion": "Es importante que previamente realices tu pedido (mínimo un día de anticipación). Esto con el fin de otorgar un servicio de calidad en la frescura de tus alimentos, así como evitar el desperdicio de comida,",
       "precio": "$90.00 si adquieres tus alimentos en el negocio y usas tus refractarios; y $100.00 si necesitas desechables y/o deseas que los llevemos a tu domicilio.",
-      "tituloCarta": "Observaciones importantes",
+      "tituloCarta": "Observaciones importantes...........",
       "pagina4": "La comida se lleva a partir de las 2:00 pm y solo a los lugares cercanos a la col. Exhacienda Santana, o bien, puedes pasar por tus alimentos a partir de la 1:30 pm.",
       "pago": {
         "mensaje": "💳 Transferencia a: Claudia Franco Angulo",
@@ -69,7 +69,7 @@ const menuData = {
       "fecha": "2025-10-17",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Segunda",
+        "Tercer",
         "prueba."
       ]
     }
