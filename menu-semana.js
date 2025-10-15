@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Lunes",
       "fecha": "2025-10-13",
-      "imagen": "1760392644349.jpg",
+      "imagen": "1760562791452.jpg",
       "platillos": [
         "Arroz blanco con elote",
         "Tortitas de papa con atún",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Martes",
       "fecha": "2025-10-07",
-      "imagen": "1760373690586.jpeg",
+      "imagen": "1760562798844.jpg",
       "platillos": [
         "Crema de zanahoria",
         "Hamburguesas de carne de res",
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-10-17",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Segunda",
+        "Tercer",
         "prueba."
       ]
     }
