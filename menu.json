@@ -40,30 +40,33 @@
       "fecha": "2025-10-22",
       "imagen": "1760373740012.jpg",
       "platillos": [
-        "Arroz rojo con verduras",
-        "Queso con rajas en salsa asada",
+        "Sopa de fideos",
+        "Salchichas con papa al chipotle",
+        "Guacamole",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Jueves",
-      "fecha": "2025-10-16",
+      "fecha": "2025-10-23",
       "imagen": "1760374150650.jpg",
       "platillos": [
-        "Arroz blanco",
-        "Tortitas de camarón con nopales",
+        "Arroz rojo con verduras",
+        "Tacos de papa a la mexicana",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-17",
-      "imagen": "1760472222057.jpg",
+      "fecha": "2025-10-24",
+      "imagen": "1760632431633.jpg",
       "platillos": [
-        "Primer",
-        "prueba."
+        "Sopa de lentejas",
+        "Tortitas de espinacas con queso",
+        "Ensalada",
+        "Postre"
       ]
     }
   ]
