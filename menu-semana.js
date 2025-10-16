@@ -21,29 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-13",
-      "imagen": "1760565057319.jpg",
+      "fecha": "2025-10-20",
+      "imagen": "1760392644349.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Tortitas de papa con atún",
-        "Ensalada",
+        "Chilacayote con mole y carne de puerco",
+        "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-07",
+      "fecha": "2025-10-21",
       "imagen": "1760373690586.jpeg",
       "platillos": [
-        "Crema de zanahoria",
-        "Hamburguesas de carne de res",
+        "Crema de champiñones",
+        "Enfrijoladas",
         "Ensalada",
         "Postre"
       ]
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-10-15",
+      "fecha": "2025-10-22",
       "imagen": "1760373740012.jpg",
       "platillos": [
         "Arroz rojo con verduras",
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-10-17",
       "imagen": "1760472222057.jpg",
       "platillos": [
-        "Tercer",
+        "Primer",
         "prueba."
       ]
     }
