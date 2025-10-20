@@ -21,58 +21,55 @@ document.addEventListener("DOMContentLoaded", () => {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-20",
+      "fecha": "2025-10-13",
       "imagen": "1760392644349.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Chilacayote con mole y carne de puerco",
-        "Frijoles de la olla",
+        "Tortitas de papa con atún",
+        "Ensalada",
         "Postre"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-21",
+      "fecha": "2025-10-07",
       "imagen": "1760373690586.jpeg",
       "platillos": [
-        "Crema de champiñones",
-        "Enfrijoladas",
+        "Crema de zanahoria",
+        "Hamburguesas de carne de res",
         "Ensalada",
         "Postre"
       ]
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-10-22",
+      "fecha": "2025-10-15",
       "imagen": "1760373740012.jpg",
       "platillos": [
-        "Sopa de fideos",
-        "Salchichas con papa al chipotle",
-        "Guacamole",
+        "Arroz rojo con verduras",
+        "Queso con rajas en salsa asada",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Jueves",
-      "fecha": "2025-10-23",
+      "fecha": "2025-10-16",
       "imagen": "1760374150650.jpg",
       "platillos": [
-        "Arroz rojo con verduras",
-        "Tacos de papa a la mexicana",
+        "Arroz blanco",
+        "Tortitas de camarón con nopales",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-24",
-      "imagen": "1760632431633.jpg",
+      "fecha": "2025-10-17",
+      "imagen": "1760472222057.jpg",
       "platillos": [
-        "Sopa de lentejas",
-        "Tortitas de espinacas con queso",
-        "Ensalada",
-        "Postre"
+        "Primer",
+        "prueba."
       ]
     }
   ]
