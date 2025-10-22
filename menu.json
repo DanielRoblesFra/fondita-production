@@ -60,11 +60,23 @@
     {
       "dia": "Viernes",
       "fecha": "2025-10-17",
-      "imagen": "1761156508310.jpg",
+      "imagen": "1760472222057.jpg",
       "platillos": [
         "Primer",
         "prueba."
       ]
+    },
+    {
+      "dia": "Ensaladas",
+      "fecha": "",
+      "imagen": "1761160109465.jpg",
+      "platillos": []
+    },
+    {
+      "dia": "Promociones de temporada",
+      "fecha": "",
+      "imagen": "1761160093856.jpg",
+      "platillos": []
     }
   ]
 }
