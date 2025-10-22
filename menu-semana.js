@@ -89,17 +89,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (container && menuData.menu_semana) {
         container.innerHTML = "";
-        // ✅ MOSTRAR SOLO LOS PRIMEROS 5 DÍAS (Lunes a Viernes)
-        menuData.menu_semana.slice(0, 5).forEach(dia => {
+        // ✅ MOSTRAR LAS 7 TARJETAS (5 días + 2 especiales)
+        menuData.menu_semana.forEach((dia, index) => {
             if (!dia.dia) return;
             
-            const platillosHTML = dia.platillos 
+            const platillosHTML = dia.platillos && dia.platillos.length > 0
                 ? dia.platillos.map(p => '<li>' + p + '</li>').join("")
-                : "";
+                : '<p class="no-platillos">Próximamente...</p>';
+            
+            // Determinar si es una tarjeta especial (Ensaladas o Promociones)
+            const isEspecial = dia.dia === "Ensaladas" || dia.dia === "Promociones de temporada";
+            const badgeHTML = isEspecial 
+                ? '<small class="badge-especial">' + (dia.dia.includes('Ensaladas') ? '🥗' : '🔥') + ' Especial</small>'
+                : '';
+            
+            const cardClass = isEspecial ? 'card card-especial' : 'card';
                 
             const card = document.createElement("div");
-            card.className = "card";
-            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + (dia.fecha || '') + '</p></div><div class="card-back"><img src="img/' + (dia.imagen || 'default.jpg') + '" alt="' + dia.dia + '" class="dish-image"><ul class="menu-list">' + platillosHTML + '</ul></div></div>';
+            card.className = cardClass;
+            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + (dia.fecha || '') + '</p>' + badgeHTML + '</div><div class="card-back">' + (dia.imagen ? '<img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image">' : '') + '<ul class="menu-list">' + platillosHTML + '</ul></div></div>';
             container.appendChild(card);
         });
     }
