@@ -76,13 +76,13 @@ const menuData = {
     {
       "dia": "Ensaladas",
       "fecha": "",
-      "imagen": "1761160109465.jpg",
+      "imagen": "",
       "platillos": []
     },
     {
       "dia": "Promociones de temporada",
       "fecha": "",
-      "imagen": "1761160093856.jpg",
+      "imagen": "",
       "platillos": []
     }
   ]
