@@ -75,14 +75,14 @@ const menuData = {
     },
     {
       "dia": "Ensaladas",
-      "fecha": "",
-      "imagen": "",
+      "fecha": "2025-10-15",
+      "imagen": "1761165081340.jpg",
       "platillos": []
     },
     {
       "dia": "Promociones de temporada",
-      "fecha": "",
-      "imagen": "",
+      "fecha": "2025-10-22",
+      "imagen": "1761165086942.jpg",
       "platillos": []
     }
   ]
