@@ -74,17 +74,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Ensaladas",
-      "fecha": "",
-      "imagen": "",
-      "platillos": []
+      "fecha": "2025-10-23",
+      "imagen": "1761232411763.jpg",
+      "platillos": [
+        "Prueba. Texto"
+      ]
     },
     {
       "dia": "Promociones de temporada",
-      "fecha": "2025-10-22",
-      "imagen": "1761167195571.jpg",
+      "fecha": "2025-10-24",
+      "imagen": "1761232403484.jpg",
       "platillos": [
-        "Hola",
-        "prueba"
+        "Texto",
+        "Prueba"
       ]
     }
   ]
@@ -101,16 +103,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 : '<p class="no-platillos">Próximamente...</p>';
             
             // Determinar si es una tarjeta especial (Ensaladas o Promociones)
-            const isEspecial = dia.dia === "Ensaladas" || dia.dia === "Promociones de temporada";
-            const badgeHTML = isEspecial 
-                ? '<small class="badge-especial">' + (dia.dia.includes('Ensaladas') ? '🥗' : '🔥') + ' Especial</small>'
-                : '';
-            
-            const cardClass = isEspecial ? 'card card-especial' : 'card';
+            const isEnsaladas = dia.dia === "Ensaladas";
+            const isPromociones = dia.dia === "Promociones de temporada";
+            const cardClass = isEnsaladas || isPromociones ? 'card card-especial' : 'card';
                 
             const card = document.createElement("div");
             card.className = cardClass;
-            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + (dia.fecha || '') + '</p>' + badgeHTML + '</div><div class="card-back">' + (dia.imagen ? '<img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image">' : '') + '<ul class="menu-list">' + platillosHTML + '</ul></div></div>';
+            card.innerHTML = '<div class="card-inner"><div class="card-front"><h1>' + dia.dia + '</h1><p>' + (dia.fecha || '') + '</p></div><div class="card-back">' + (dia.imagen ? '<img src="img/' + dia.imagen + '" alt="' + dia.dia + '" class="dish-image">' : '') + '<ul class="menu-list">' + platillosHTML + '</ul></div></div>';
             container.appendChild(card);
         });
     }
