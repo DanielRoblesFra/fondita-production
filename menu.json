@@ -69,18 +69,19 @@
     {
       "dia": "Ensaladas",
       "fecha": "2025-10-23",
-      "imagen": "1761232411763.jpg",
+      "imagen": "1761233495479.jpg",
       "platillos": [
-        "Prueba. Texto"
+        "Texto",
+        "Prueba"
       ]
     },
     {
       "dia": "Promociones de temporada",
       "fecha": "2025-10-24",
-      "imagen": "1761232403484.jpg",
+      "imagen": "1761233505327.jpg",
       "platillos": [
         "Texto",
-        "Prueba"
+        "prueba"
       ]
     }
   ]
