@@ -22,73 +22,73 @@ const menuData = {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-13",
-      "imagen": "1760392644349.jpg",
+      "fecha": "2025-10-27",
+      "imagen": "1761505050234.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Tortitas de papa con atún",
-        "Ensalada",
-        "Postre"
-      ]
-    },
-    {
-      "dia": "Martes",
-      "fecha": "2025-10-07",
-      "imagen": "1760373690586.jpeg",
-      "platillos": [
-        "Crema de zanahoria",
-        "Hamburguesas de carne de res",
-        "Ensalada",
-        "Postre"
-      ]
-    },
-    {
-      "dia": "Miércoles",
-      "fecha": "2025-10-15",
-      "imagen": "1760373740012.jpg",
-      "platillos": [
-        "Arroz rojo con verduras",
-        "Queso con rajas en salsa asada",
+        "Pollo con salsa de chipotle",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
+      "dia": "Martes",
+      "fecha": "2025-10-28",
+      "imagen": "1761505169594.jpg",
+      "platillos": [
+        "Arroz rojo con verduras",
+        "Pescado a la veracruzana",
+        "Frijoles refritos",
+        "Postre"
+      ]
+    },
+    {
+      "dia": "Miércoles",
+      "fecha": "2025-10-30",
+      "imagen": "1761505373922.jpg",
+      "platillos": [
+        "Espagueti blanco",
+        "Milanesa de pollo",
+        "Ensalada",
+        "Postre"
+      ]
+    },
+    {
       "dia": "Jueves",
-      "fecha": "2025-10-16",
-      "imagen": "1760374150650.jpg",
+      "fecha": "2025-10-31",
+      "imagen": "1761505594582.jpg",
       "platillos": [
         "Arroz blanco",
-        "Tortitas de camarón con nopales",
+        "Chicharrón en salsa verde",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-17",
-      "imagen": "1760472222057.jpg",
+      "fecha": "2025-11-01",
+      "imagen": "1761505962331.jpg",
       "platillos": [
-        "Primer",
-        "prueba."
+        "Arroz rojo",
+        "Pipián rojo con pollo",
+        "Frijoles refritos",
+        "Postre"
       ]
     },
     {
       "dia": "Ensaladas",
-      "fecha": "2025-10-23",
-      "imagen": "1761233495479.jpg",
+      "fecha": "2025-11-01",
+      "imagen": "",
       "platillos": [
-        "Texto",
-        "Prueba"
+        "Próximamente..."
       ]
     },
     {
       "dia": "Promociones de temporada",
-      "fecha": "2025-10-24",
-      "imagen": "1761233505327.jpg",
+      "fecha": "",
+      "imagen": "1761506164382.jpg",
       "platillos": [
-        "Texto",
-        "prueba"
+        "Dulce de calabaza (pregunta por él)."
       ]
     }
   ]
