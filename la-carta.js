@@ -22,74 +22,67 @@ const menuData = {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-27",
-      "imagen": "1761678830789.jpg",
+      "fecha": "2025-10-13",
+      "imagen": "1760392644349.jpg",
       "platillos": [
-        "Arroz blanco con elote",
-        "Pollo con salsa de chipotle",
-        "Frijoles de la olla",
-        "Postre"
+        "Prueba de actualizacion"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-28",
-      "imagen": "1761678885158.jpg",
+      "fecha": "2025-10-07",
+      "imagen": "1760373690586.jpeg",
       "platillos": [
-        "Arroz rojo con verduras",
-        "Pescado a la veracruzana",
-        "Frijoles refritos",
-        "Postre"
-      ]
-    },
-    {
-      "dia": "Miércoles",
-      "fecha": "2025-10-29",
-      "imagen": "1761678898655.jpg",
-      "platillos": [
-        "Espagueti blanco",
-        "Milanesa de pollo",
+        "Crema de zanahoria",
+        "Hamburguesas de carne de res",
         "Ensalada",
         "Postre"
       ]
     },
     {
+      "dia": "Miércoles",
+      "fecha": "2025-10-15",
+      "imagen": "1760373740012.jpg",
+      "platillos": [
+        "Arroz rojo con verduras",
+        "Queso con rajas en salsa asada",
+        "Frijoles de la olla",
+        "Postre"
+      ]
+    },
+    {
       "dia": "Jueves",
-      "fecha": "2025-10-30",
-      "imagen": "1761679033497.jpg",
+      "fecha": "2025-10-16",
+      "imagen": "1760374150650.jpg",
       "platillos": [
         "Arroz blanco",
-        "Chicharrón en salsa verde",
+        "Tortitas de camarón con nopales",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-31",
-      "imagen": "1761679411354.jpg",
+      "fecha": "2025-10-17",
+      "imagen": "1760472222057.jpg",
       "platillos": [
-        "Arroz rojo",
-        "Pipián rojo con pollo",
-        "Frijoles refritos",
-        "Postre"
+        "Primer",
+        "prueba."
       ]
     },
     {
       "dia": "Ensaladas",
       "fecha": "",
-      "imagen": "1761679131070.jpg",
+      "imagen": "1761685869894.jpg",
       "platillos": [
-        "Próximamente :)"
+        "Proximamente :)"
       ]
     },
     {
       "dia": "Promociones de temporada",
       "fecha": "",
-      "imagen": "1761679179282.jpg",
-      "platillos": [
-        "Dulce de calabaza (pregunta por él)."
-      ]
+      "imagen": "1761685886966.jpg",
+      "platillos": []
     }
   ]
 };
