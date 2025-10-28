@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-10-13",
       "imagen": "1760392644349.jpg",
       "platillos": [
-        "Prueba de actualizacion"
+        "Prueba de persistencia"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2025-10-07",
+      "fecha": "2025-10-28",
       "imagen": "1760373690586.jpeg",
       "platillos": [
         "Crema de zanahoria",
@@ -72,15 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Ensaladas",
       "fecha": "",
-      "imagen": "1761685869894.jpg",
-      "platillos": [
-        "Proximamente :)"
-      ]
+      "imagen": "1761687406623.jpg",
+      "platillos": []
     },
     {
       "dia": "Promociones de temporada",
       "fecha": "",
-      "imagen": "1761685886966.jpg",
+      "imagen": "1761687413369.jpg",
       "platillos": []
     }
   ]
