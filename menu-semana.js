@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Lunes",
       "fecha": "2025-10-27",
-      "imagen": "1761505050234.jpg",
+      "imagen": "1761678830789.jpg",
       "platillos": [
         "Arroz blanco con elote",
         "Pollo con salsa de chipotle",
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Martes",
       "fecha": "2025-10-28",
-      "imagen": "1761505169594.jpg",
+      "imagen": "1761678885158.jpg",
       "platillos": [
         "Arroz rojo con verduras",
         "Pescado a la veracruzana",
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-10-30",
-      "imagen": "1761505373922.jpg",
+      "fecha": "2025-10-29",
+      "imagen": "1761678898655.jpg",
       "platillos": [
         "Espagueti blanco",
         "Milanesa de pollo",
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Jueves",
-      "fecha": "2025-10-31",
-      "imagen": "1761505594582.jpg",
+      "fecha": "2025-10-30",
+      "imagen": "1761679033497.jpg",
       "platillos": [
         "Arroz blanco",
         "Chicharrón en salsa verde",
@@ -65,8 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-11-01",
-      "imagen": "1761505962331.jpg",
+      "fecha": "2025-10-31",
+      "imagen": "1760472222057.jpg",
       "platillos": [
         "Arroz rojo",
         "Pipián rojo con pollo",
@@ -76,16 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       "dia": "Ensaladas",
-      "fecha": "2025-11-01",
-      "imagen": "",
+      "fecha": "",
+      "imagen": "1761679131070.jpg",
       "platillos": [
-        "Próximamente..."
+        "Próximamente :)"
       ]
     },
     {
       "dia": "Promociones de temporada",
       "fecha": "",
-      "imagen": "1761506164382.jpg",
+      "imagen": "1761679179282.jpg",
       "platillos": [
         "Dulce de calabaza (pregunta por él)."
       ]
