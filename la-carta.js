@@ -22,8 +22,8 @@ const menuData = {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-10-13",
-      "imagen": "1760392644349.jpg",
+      "fecha": "2025-10-27",
+      "imagen": "1761688310019.jpg",
       "platillos": [
         "Prueba de persistencia"
       ]
@@ -31,7 +31,7 @@ const menuData = {
     {
       "dia": "Martes",
       "fecha": "2025-10-28",
-      "imagen": "1760373690586.jpeg",
+      "imagen": "1761688316780.jpg",
       "platillos": [
         "Crema de zanahoria",
         "Hamburguesas de carne de res",
@@ -41,8 +41,8 @@ const menuData = {
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-10-15",
-      "imagen": "1760373740012.jpg",
+      "fecha": "2025-10-29",
+      "imagen": "1761688335787.jpg",
       "platillos": [
         "Arroz rojo con verduras",
         "Queso con rajas en salsa asada",
@@ -52,8 +52,8 @@ const menuData = {
     },
     {
       "dia": "Jueves",
-      "fecha": "2025-10-16",
-      "imagen": "1760374150650.jpg",
+      "fecha": "2025-10-30",
+      "imagen": "1761688345336.jpg",
       "platillos": [
         "Arroz blanco",
         "Tortitas de camarón con nopales",
@@ -63,8 +63,8 @@ const menuData = {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-10-17",
-      "imagen": "1760472222057.jpg",
+      "fecha": "2025-10-31",
+      "imagen": "1761688356324.jpg",
       "platillos": [
         "Primer",
         "prueba."
@@ -74,7 +74,9 @@ const menuData = {
       "dia": "Ensaladas",
       "fecha": "",
       "imagen": "1761687406623.jpg",
-      "platillos": []
+      "platillos": [
+        "Proximamente :)"
+      ]
     },
     {
       "dia": "Promociones de temporada",
