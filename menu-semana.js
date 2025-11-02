@@ -79,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "imagen": "1762109663237.jpg",
       "platillos": [
         "Tenemos otra alternativa para ti más saludable",
-        "si así lo deseas. Ensalada a tu gusto (podrás elegir las verduras de tu gusto",
-        "proteína",
-        "adereso y si lo acompañas con crotones o tiritas de maíz) Pide los ingredientes al 3316922341."
+        "¡ensalada! Pide los ingredientes al 3316922341."
       ]
     },
     {
