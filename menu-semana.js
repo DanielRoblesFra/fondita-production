@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "imagen": "1764558534138.jpg",
       "platillos": [
         "Sopa de habas",
-        "Tinga (se anexan tostádas)",
+        "Tinga (se anexan tostadas)",
         "Ensalada",
         "Frijoles refritos",
         "Postre"
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "fecha": "2025-11-03",
       "imagen": "1764559318532.jpg",
       "platillos": [
-        "Estaremos ofreciendo bacalao y romeritos con tortitas de camarónes. ¡Aparta con tiempo al 3316922341!"
+        "Estaremos ofreciendo Bacalao y/o Romeritos con tortitas de camarón. ¡Aparta con tiempo al 3316922341!"
       ]
     }
   ]
