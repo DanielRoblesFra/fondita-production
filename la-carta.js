@@ -88,11 +88,10 @@ const menuData = {
     },
     {
       "dia": "Promociones de temporada",
-      "fecha": "2025-11-03",
-      "imagen": "1767622518387.jpg",
+      "fecha": "2026-01-05",
+      "imagen": "1767641925759.jpg",
       "platillos": [
-        "Este mes no ofreceremos nada",
-        "¡espera el siguiente!"
+        "Este mes estaremos ofreciendo chilaquiles rojos y/o verdes para el desayuno. ¡Pídelos al 3316922341!"
       ]
     }
   ]
