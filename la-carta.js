@@ -22,7 +22,7 @@ const menuData = {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2025-12-08",
+      "fecha": "2026-01-05",
       "imagen": "1765219518183.jpg",
       "platillos": [
         "Arroz blanco con elote",
@@ -33,7 +33,7 @@ const menuData = {
     },
     {
       "dia": "Martes",
-      "fecha": "2025-12-09",
+      "fecha": "2026-01-06",
       "imagen": "1765219657774.jpg",
       "platillos": [
         "Caldo de pollo con verduras",
@@ -44,7 +44,7 @@ const menuData = {
     },
     {
       "dia": "Miércoles",
-      "fecha": "2025-12-10",
+      "fecha": "2026-01-07",
       "imagen": "1765219856397.jpg",
       "platillos": [
         "Arroz rojo con verduras",
@@ -55,11 +55,11 @@ const menuData = {
     },
     {
       "dia": "Jueves",
-      "fecha": "2025-12-11",
+      "fecha": "2026-01-08",
       "imagen": "1765219985503.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Enchiladas suizasa",
+        "Enchiladas suizas",
         "Ensalada",
         "Frijoles de la olla",
         "Postre"
@@ -67,7 +67,7 @@ const menuData = {
     },
     {
       "dia": "Viernes",
-      "fecha": "2025-12-12",
+      "fecha": "2026-01-09",
       "imagen": "1765220114758.jpg",
       "platillos": [
         "Sopa de fideos",
@@ -89,9 +89,10 @@ const menuData = {
     {
       "dia": "Promociones de temporada",
       "fecha": "2025-11-03",
-      "imagen": "1764559318532.jpg",
+      "imagen": "1767622518387.jpg",
       "platillos": [
-        "Estaremos ofreciendo Bacalao y/o Romeritos con tortitas de camarón. ¡Aparta con tiempo al 3316922341!"
+        "Este mes no ofreceremos nada",
+        "¡espera el siguiente!"
       ]
     }
   ]
