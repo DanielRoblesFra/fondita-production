@@ -21,58 +21,57 @@ document.addEventListener("DOMContentLoaded", () => {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2026-01-05",
-      "imagen": "1765219518183.jpg",
+      "fecha": "2026-01-12",
+      "imagen": "1768175962577.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Tortitas de papa y atún",
+        "Calabacitas con costilla",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2026-01-06",
-      "imagen": "1765219657774.jpg",
+      "fecha": "2026-01-13",
+      "imagen": "1768176041384.jpg",
       "platillos": [
-        "Caldo de pollo con verduras",
-        "Pastel azteca",
-        "Ensalada fresca",
+        "Arroz rojo con verduras",
+        "Chiles rellenos de queso o requesón",
+        "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Miércoles",
-      "fecha": "2026-01-07",
-      "imagen": "1765219856397.jpg",
+      "fecha": "2026-01-14",
+      "imagen": "1768176088909.jpg",
       "platillos": [
-        "Arroz rojo con verduras",
-        "Chicharrón en salsa roja",
-        "Frijoles de la olla",
+        "Arroz blanco con elote",
+        "Flautas (pollo",
+        "papa y requesón)",
+        "Frijoles fritos",
         "Postre"
       ]
     },
     {
       "dia": "Jueves",
-      "fecha": "2026-01-08",
-      "imagen": "1765219985503.jpg",
+      "fecha": "2026-01-15",
+      "imagen": "1768176184036.jpg",
       "platillos": [
-        "Arroz blanco con elote",
-        "Enchiladas suizas",
-        "Ensalada",
-        "Frijoles de la olla",
+        "Arroz rojo",
+        "albondigas",
+        "frijoles refritos",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2026-01-09",
-      "imagen": "1765220114758.jpg",
+      "fecha": "2026-01-16",
+      "imagen": "1768176284941.jpg",
       "platillos": [
         "Sopa de fideos",
-        "Hamburguesas de res",
+        "Pescado empapelado",
         "Ensalada fresca",
-        "Papas",
         "Postre"
       ]
     },
@@ -88,9 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       "dia": "Promociones de temporada",
       "fecha": "2026-01-05",
-      "imagen": "1767641925759.jpg",
+      "imagen": "1768176535741.jpg",
       "platillos": [
-        "Este mes estaremos ofreciendo chilaquiles rojos y/o verdes para el desayuno. ¡Pídelos al 3316922341!"
+        "Este mes para desayunos estaremos ofreciendo chilaquiles rojos y/o verdes. ¡Pídelos al 3316922341!"
       ]
     }
   ]
