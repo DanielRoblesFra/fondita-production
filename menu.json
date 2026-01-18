@@ -15,57 +15,58 @@
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2026-01-12",
-      "imagen": "1768175962577.jpg",
+      "fecha": "2026-01-19",
+      "imagen": "1768757118192.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Calabacitas con costilla",
+        "Cecina",
+        "Guacamole",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2026-01-13",
-      "imagen": "1768176041384.jpg",
+      "fecha": "2026-01-20",
+      "imagen": "1768757052392.jpg",
       "platillos": [
         "Arroz rojo con verduras",
-        "Chiles rellenos de queso o requesón",
-        "Frijoles de la olla",
+        "Bistec ranquero",
+        "Frijoles refritos",
         "Postre"
       ]
     },
     {
       "dia": "Miércoles",
-      "fecha": "2026-01-14",
-      "imagen": "1768176088909.jpg",
+      "fecha": "2026-01-21",
+      "imagen": "1768757203498.jpg",
       "platillos": [
         "Arroz blanco con elote",
-        "Flautas (pollo",
-        "papa y requesón)",
-        "Frijoles fritos",
+        "Enfrijoladas",
+        "Ensalada fresca",
         "Postre"
       ]
     },
     {
       "dia": "Jueves",
-      "fecha": "2026-01-15",
-      "imagen": "1768176184036.jpg",
+      "fecha": "2026-01-22",
+      "imagen": "1768757279792.jpg",
       "platillos": [
-        "Arroz rojo",
-        "albondigas",
-        "frijoles refritos",
+        "Crema poblana",
+        "Espagueti con camarones",
+        "Ensalada",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2026-01-16",
-      "imagen": "1768176284941.jpg",
+      "fecha": "2026-01-23",
+      "imagen": "1768757399774.jpg",
       "platillos": [
         "Sopa de fideos",
-        "Pescado empapelado",
+        "Milanesa de pollo",
         "Ensalada fresca",
+        "Frijoles refritos",
         "Postre"
       ]
     },
