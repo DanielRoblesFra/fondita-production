@@ -21,57 +21,56 @@ document.addEventListener("DOMContentLoaded", () => {
   "menu_semana": [
     {
       "dia": "Lunes",
-      "fecha": "2026-01-19",
-      "imagen": "1768757118192.jpg",
+      "fecha": "2026-01-26",
+      "imagen": "1769395915080.jpg",
       "platillos": [
-        "Arroz blanco con elote",
-        "Cecina",
-        "Guacamole",
+        "Arroz rojo con verduras",
+        "Chicharrón en salsa verde",
         "Frijoles de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Martes",
-      "fecha": "2026-01-20",
-      "imagen": "1768757052392.jpg",
+      "fecha": "2026-01-27",
+      "imagen": "1769395989219.jpg",
       "platillos": [
-        "Arroz rojo con verduras",
-        "Bistec ranquero",
-        "Frijoles refritos",
+        "Arroz blanco con elote",
+        "Mole encacahuetado",
+        "Frijoles  de la olla",
         "Postre"
       ]
     },
     {
       "dia": "Miércoles",
-      "fecha": "2026-01-21",
-      "imagen": "1768757203498.jpg",
+      "fecha": "2026-01-28",
+      "imagen": "1769396105958.jpg",
       "platillos": [
-        "Arroz blanco con elote",
-        "Enfrijoladas",
+        "Arroz rojo",
+        "Pollo en salsa gravy",
         "Ensalada fresca",
+        "Frijoles refritos",
         "Postre"
       ]
     },
     {
       "dia": "Jueves",
-      "fecha": "2026-01-22",
-      "imagen": "1768757279792.jpg",
+      "fecha": "2026-01-29",
+      "imagen": "1769396293677.jpg",
       "platillos": [
-        "Crema poblana",
-        "Espagueti con camarones",
+        "Crema de champiñones",
+        "Tostadas de salpicón",
         "Ensalada",
         "Postre"
       ]
     },
     {
       "dia": "Viernes",
-      "fecha": "2026-01-23",
-      "imagen": "1768757399774.jpg",
+      "fecha": "2026-01-30",
+      "imagen": "1769396448418.jpg",
       "platillos": [
         "Sopa de fideos",
-        "Milanesa de pollo",
-        "Ensalada fresca",
+        "Tacos de papa a la mexicana",
         "Frijoles refritos",
         "Postre"
       ]
